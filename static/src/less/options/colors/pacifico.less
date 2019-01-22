@@ -1,0 +1,83 @@
+// Pacifico Color Set
+// =============================
+
+@color-alpha     : @color-alpha-pacifico;
+@color-beta      : @color-beta-pacifico;
+@color-gamma     : @color-gamma-pacifico;
+@color-delta     : @color-delta-pacifico;
+@color-epsilon   : @color-epsilon-pacifico;
+
+// =============================
+// Bootstrap Colours ===========
+// =============================
+
+@brand-primary : @color-alpha;
+@brand-info    : #4D68A3;
+@brand-success : #5CB85C;
+@brand-info    : #4D68A3;
+@brand-warning  : #DDC66B;
+@brand-danger : #D86060;
+
+// =============================
+// Layout's Colours ============
+// =============================
+
+body{ background-color: #FEFEFE;}
+
+// LAYOUT BOXED
+
+.esteteatro-layout-boxed() when (@esteteatro-layout-boxed = true) {
+
+    body{ background-color: #575D69;}
+
+}
+.esteteatro-layout-boxed();
+
+// LAYOUT POSTCARD
+.esteteatro-layout-postcard() when (@esteteatro-layout-postcard = true) {
+
+    body{ background-color: #575D69;}
+
+    a.navbar-brand, .navbar-default a.navbar-brand {
+        color: @white;
+    }
+
+    header#graph_header .navbar .navbar-nav > li.active > a,
+    header#graph_header .navbar .navbar-nav > li.active > a:hover,
+    header#graph_header .navbar .navbar-nav > li.active > a:focus {
+        color: @gray-lighter;
+    }
+
+    header#graph_header .navbar .navbar-nav > li > a {
+        color: @gray-light;
+        &:hover{
+            color: white;
+        }
+    }
+
+}
+.esteteatro-layout-postcard();
+
+// LAYOUT TOP BANNER
+
+.esteteatro-layout-top_banner() when (@esteteatro-layout-top_banner = true) {
+    
+    body{ background-color: #575D69;}
+
+    a.navbar-brand, .navbar-default a.navbar-brand {
+        color: @white;
+    }
+
+    header#graph_header .navbar .navbar-nav > li.active > a,
+    header#graph_header .navbar .navbar-nav > li.active > a:hover,
+    header#graph_header .navbar .navbar-nav > li.active > a:focus {
+        color: @gray-lighter;
+    }
+
+    header#graph_header .navbar .navbar-nav > li > a {
+        color: @gray-light;
+    }
+
+}
+.esteteatro-layout-top_banner();
+
