@@ -9,7 +9,7 @@
   </template>
 
   <!-- EsteTeatro's options -->
-  <template id="esteteatro_affix_top_menu" inherit_id="website.layout" customize_show="True" name="Affix top menu">
+  <template id="graph_affix_top_menu" inherit_id="website.layout" customize_show="True" name="Affix top menu">
     <xpath expr="//div[@id='wrapwrap']/header" position="attributes">
       <attribute name="class">top_menu_affix</attribute>
     </xpath>
@@ -22,7 +22,7 @@
   </template>
 
   <!-- EsteTeatro's data selectors -->
-  <template id="esteteatro_data-selectors" inherit_id="website.snippet_options" name="EsteTeatro data selectors">
+  <template id="graph_data-selectors" inherit_id="website.snippet_options" name="EsteTeatro data selectors">
     <xpath expr="//div[@data-js='background']" position="attributes">
       <attribute name="data-selector" add=".s_banner, .s_animated_boxes > .item, .s_masonry_block .block, section:not(.s_google_map, .graph_accordition)" remove=".s_google_map" separator=","/>
     </xpath>
@@ -37,7 +37,7 @@
   </template>
 
   <!-- EsteTeatro's methods -->
-  <template id="esteteatro_js-methods" inherit_id="website.snippet_options" name="EsteTeatro data electors">
+  <template id="graph_js-methods" inherit_id="website.snippet_options" name="EsteTeatro data electors">
     <xpath expr="//div[@data-js='background']" position="after">
       <div data-js='no_resize' data-selector=".s_latest_posts_big_picture, .s_latest_posts"/>
     </xpath>
@@ -338,6 +338,69 @@
       </div>
     </xpath>
   </template>
+
+  
+  
+  
+    
+  
+  <template id="este_website_event_snippet_calendar" name="esteteatro_website_event_snippet_calendar" inherit_id="website_event_snippet_calendar.s_event_calendar_list">
+      <xpath expr="//section[@class='s_event_calendar_list']" position="replace">
+          
+        <section class="oe_snippet_body s_event_calendar_list"> 
+          <div class="container">
+                <div class="row">
+                    <div class="col-md-12 mt32 text-center">
+                        <h3>Events</h3>
+                    </div>
+                    <div class="col-md-4 mt16 mb16">
+                        <h4>Events Calendar</h4>
+                        <t t-call="website_event_snippet_calendar.s_event_calendar"/>
+                    </div>
+                    <div class="col-md-8 mt16 mb16">
+                        <h4>List</h4>
+                        <t t-call="website_event_snippet_calendar.s_event_list"/>
+                    </div>
+                    <div class="col-md-12 mb32 text-right">
+                        <a href="/events" class="btn btn-info">All events</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+      
+  
+      </xpath>  
+  </template>
+  
+  
+  
+  
+<!-- Original
+  <t name="Events Calendar and List" t-name="website_event_snippet_calendar.s_event_calendar_list">
+        <section class="oe_snippet_body s_event_calendar_list">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 mt32 text-center">
+                        <h3>Events</h3>
+                    </div>
+                    <div class="col-md-4 mt16 mb16">
+                        <h4>Events Calendar</h4>
+                        <t t-call="website_event_snippet_calendar.s_event_calendar"/>
+                    </div>
+                    <div class="col-md-8 mt16 mb16">
+                        <h4>List</h4>
+                        <t t-call="website_event_snippet_calendar.s_event_list"/>
+                    </div>
+                    <div class="col-md-12 mb32 text-right">
+                        <a href="/events" class="btn btn-info">All events</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </t> -->
+
+
 
   </data>
 </openerp>
