@@ -543,6 +543,7 @@ body #theme_customize_modal .modal-content .modal-body #tab_animations {
   }
 
 }
+
 .bootstrap-datetimepicker-widget table td.day:hover, 
 .bootstrap-datetimepicker-widget table td.hour:hover, 
 .bootstrap-datetimepicker-widget table td.minute:hover, 
@@ -563,4 +564,7 @@ body #theme_customize_modal .modal-content .modal-body #tab_animations {
 }
 .s_event_calendar {
     background: rgba(34, 28, 28, 0.5) !important;
+}
+.breadcrumb, .table-striped > tbody > tr:nth-of-type(2n+1) {
+    background: none !important;
 }
