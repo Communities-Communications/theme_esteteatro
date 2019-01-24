@@ -22,7 +22,7 @@
     'images': [
         'static/description/graphene_poster.jpg',
     ],
-    'depends': ['theme_common', 'snippet_google_map', 'website_animate', 'snippet_latest_posts', 'latest_posts_esteteatro', 'website_event_snippet_calendar', 'website_event_excerpt_img'],
+    'depends': ['theme_common', 'snippet_google_map', 'website_animate', 'snippet_latest_posts', 'latest_posts_esteteatro', 'website_event_snippet_calendar'],
     'price': 199,
     'currency': 'EUR',
     'live_test_url': 'https://theme-graphene.odoo.com'
