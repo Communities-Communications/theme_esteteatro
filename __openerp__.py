@@ -1,5 +1,5 @@
 {
-    'name':'Graphene theme',
+    'name':'Esteteatro theme',
     'description': 'Light colours, thin text, clean and sharp design.',
     'category': 'Theme/Corporate',
     'sequence': 110,
