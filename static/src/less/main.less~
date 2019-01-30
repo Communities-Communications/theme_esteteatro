@@ -739,7 +739,6 @@ button.btn{
   .transition(margin-top 500ms ease);
 
   .navbar{
-    background-color: @black;
     padding: 2px 20px;
     font-size: 12px;
   }
